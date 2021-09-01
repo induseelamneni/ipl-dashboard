@@ -1,1 +1,37 @@
 /* Write your CSS here */
+.ipl-card {
+  background-color: #ffffff33;
+  border: 1px solid #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.each-team-logo {
+  height: 150px;
+  width: 100px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.team-name {
+  font-family: 'Bree serif';
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.item-link {
+  color: #000000;
+  text-decoration: none;
+
+  border-radius: 5px;
+  margin: 15px;
+}

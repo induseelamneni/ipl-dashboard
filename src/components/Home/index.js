@@ -15,8 +15,9 @@ class Home extends Component {
   getTeamCardDetails = async () => {
     const response = await fetch('https://apis.ccbp.in/ipl')
     const data = await response.json()
-    console.log(data)
-    const updatedData = data.map(eachData => ({
+    const t = data.teams
+
+    const updatedData = t.map(eachData => ({
       id: eachData.id,
       name: eachData.name,
       url: eachData.team_image_url,
@@ -41,9 +42,11 @@ class Home extends Component {
           />
           <h1 className="heading">IPL Dashboard</h1>
         </div>
-        {iplCardDetails.map(item => (
-          <TeamCard cardDetails={item} key={item.id} />
-        ))}
+        <div className="ul-teams-container">
+          {iplCardDetails.map(item => (
+            <TeamCard cardDetails={item} key={item.id} />
+          ))}
+        </div>
       </div>
     )
   }
