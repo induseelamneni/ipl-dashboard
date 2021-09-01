@@ -1,0 +1,14 @@
+/* Write your CSS here */
+.not-found-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.not-found-heading {
+  font-family: 'Bree Serif';
+  font-size: 60px;
+  font-weight: 800;
+  color: #ffffff;
+}
